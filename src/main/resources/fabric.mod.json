@@ -3,34 +3,26 @@
 	"id": "dodocustomitems",
 	"version": "${version}",
 	"name": "dodocustomitems",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Custom items for my servers",
 	"authors": [
-		"Me!"
+		"UnsafeDodo"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/dodocustomitems/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"unsafedodo.dodocustomitems.ExampleMod"
-		],
-		"client": [
-			"unsafedodo.dodocustomitems.ExampleModClient"
+			"unsafedodo.dodocustomitems.DodoCustomItems"
 		]
 	},
 	"mixins": [
-		"dodocustomitems.mixins.json",
-		{
-			"config": "dodocustomitems.client.mixins.json",
-			"environment": "client"
-		}
 	],
 	"depends": {
-		"fabricloader": ">=0.14.22",
+		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
